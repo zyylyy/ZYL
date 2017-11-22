@@ -1,0 +1,71 @@
+@import "./_variables";
+@import "./_extend";
+
+//  重置浏览器样式
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+// 最小屏幕1200px
+html {
+    height: 100%;
+    font-family: '微软雅黑';
+}
+body {
+    min-width: @base;
+    height: 100%;
+}
+input:focus {
+    outline: 0;
+}
+
+.base {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+// 清除浮动
+.clearfix {
+    *zoom: 1;
+    display: block;
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.pg-textarea {
+    padding: 0 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    outline: none;
+    border: 0 none;
+    width: 100%;
+    overflow: hidden;
+    background: none;
+    background-color: transparent;
+    height: 40px;
+}
+
+.pg-textarea {
+    resize: none;
+    wrap: virtual;
+}
